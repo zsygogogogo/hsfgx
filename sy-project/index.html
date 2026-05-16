@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>花师傅国学命理</title>
+<link rel="icon" href="https://picsum.photos/id/30/32/32">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+:root {
+    --primary: #b91c1c;
+    --secondary: #1f2937;
+    --light: #f9fafb;
+    --dark: #111827;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: var(--dark);
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+.navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+
+/* 服务卡片阴影 + 悬浮效果（你要的效果在这里） */
+.service-card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background: #991b1b;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer-heading-color {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="#">花师傅</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item px-3"><a class="nav-link" href="#about">关于师傅</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="#service">服务项目</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="#cases">实战案例</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="#feedback">学员反馈</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="#contact">联系咨询</a></li>
+                <li class="nav-item px-3"><a class="btn btn-primary" href="#contact">立即咨询</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- 头部（带全屏国学风水背景） -->
+<section class="pt-5 mt-5 pb-5 text-white position-relative overflow-hidden" 
+style="background:url(./img/bj.png) center center / cover no-repeat;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <div class="container position-relative py-8 text-center z-index-10">
+        <h1 class="fw-bold mb-3 display-4">花师傅 · 国学命理传承</h1>
+        <p class="text-white opacity-90 mb-5 fs-5" style="max-width:700px;margin:0 auto;">
+            家学渊源｜奇门遁甲｜八字命理｜风水运筹｜实战数千例
+        </p>
+        <a href="#contact" class="btn btn-danger btn-lg px-5 py-3">立即咨询</a>
+    </div>
+</section>
+
+<!-- 关于师傅 -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">关于花师傅</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="text-center mb-4">
+                    花师傅深耕国学命理二十余年，家学渊源，修真访道，得高人亲授奇门遁甲、八字、大六壬、小六壬、杨公风水等正统绝学。去繁存要、实战验证，自成高应验率体系，专注为个人与企业提供精准、务实、可落地的决策服务。
+                </p>
+                <div class="p-4 bg-white rounded shadow-sm mb-4">
+                    <h5 class="fw-bold mb-2">专业履历</h5>
+                    <p class="mb-1">• 2022 浙江衢州弈友围棋有限公司 策略顾问</p>
+                    <p class="mb-1">• 2023 衢州爱琴海奥特莱斯商场 风水设计师</p>
+                    <p class="mb-1">• 2024 北京朱雀南章管理咨询有限公司 命理讲师</p>
+                    <p class="mb-1">• 实战案例超数千例，企业/工会长期合作顾问</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h5 class="fw-bold">师承</h5>
+                    <p>北辰师傅（江苏春晚分会场风水设计师）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 服务项目 -->
+<section id="service" class="py-5" style="background-color: #fdf6f0;">
+    <div class="container">
+        <h2 class="section-title">专业服务项目</h2>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-book-open fs-2 text-danger mb-3"></i>
+                    <h5>八字精批 · 命局全解</h5>
+                    <p class="text-muted small">事业、财运、婚姻、健康、流年全面解析</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-compass fs-2 text-danger mb-3"></i>
+                    <h5>奇门运筹 · 商业决策</h5>
+                    <p class="text-muted small">决策、合作风险、时机选择、投资指导</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-house fs-2 text-danger mb-3"></i>
+                    <h5>风水堪舆 · 气场调和</h5>
+                    <p class="text-muted small">住宅、商铺、企业环境布局与运势提升</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-heart fs-2 text-danger mb-3"></i>
+                    <h5>姻缘和合 · 感情修复</h5>
+                    <p class="text-muted small">感情分析、复合指导、正缘运势测算</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-coins fs-2 text-danger mb-3"></i>
+                    <h5>催财旺财 · 事业布局</h5>
+                    <p class="text-muted small">事业提升、财运布局、时机把握</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-heart-pulse fs-2 text-danger mb-3"></i>
+                    <h5>健康预判 · 吉凶指导</h5>
+                    <p class="text-muted small">健康风险、隐患提示、运势吉凶分析</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-magnifying-glass fs-2 text-danger mb-3"></i>
+                    <h5>寻物寻人 · 方位运筹</h5>
+                    <p class="text-muted small">失物方位、走失人员、出行吉凶指导</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card service-card p-4 text-center">
+                    <i class="fa-solid fa-lightbulb fs-2 text-danger mb-3"></i>
+                    <h5>定制命理 · 人生规划</h5>
+                    <p class="text-muted small">专属人生规划、流年运势、长期指导</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 实战案例 + 点击放大图片 -->
+<section id="cases" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">实战案例</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="img/gq.png" class="card-img-top" alt="感情复合案例" style="height:200px; object-fit:cover; cursor:pointer;" onclick="openModal('img/gq.png')">
+          <div class="card-body">
+            <h5>感情复合案例</h5>
+            <p class="small text-muted">分手断联一年，经调理顺利复合，对方主动回归。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="img/sy.png" class="card-img-top" alt="生意催财" style="height:200px; object-fit:cover; cursor:pointer;" onclick="openModal('img/sy.png')">
+          <div class="card-body">
+            <h5>生意催财案例</h5>
+            <p class="small text-muted">布局后订单暴增，成交率大幅提升，效果立竿见影。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="img/cw.png" class="card-img-top" alt="寻宠案例" style="height:200px; object-fit:cover; cursor:pointer;" onclick="openModal('img/cw.png')">
+          <div class="card-body">
+            <h5>寻宠案例</h5>
+            <p class="small text-muted">精准预测方位，走失宠物由女性送回，顺利找回。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 图片放大弹窗（固定加在页面底部） -->
+<div id="imgModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; padding:20px; cursor:zoom-out;" onclick="closeModal()">
+  <img id="modalImg" style="max-width:90%; max-height:90%; margin:auto; display:block; object-fit:contain;">
+</div>
+
+<script>
+function openModal(src) {
+  document.getElementById('imgModal').style.display = 'flex';
+  document.getElementById('modalImg').src = src;
+}
+function closeModal() {
+  document.getElementById('imgModal').style.display = 'none';
+}
+</script>
+
+<!-- 学员反馈 -->
+<section id="feedback" class="py-5">
+    <div class="container">
+        <h2 class="section-title">学员真实反馈</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="p-4 bg-white rounded shadow-sm mb-3">
+                    <h6 class="fw-bold">东方一恒（风水入室弟子）</h6>
+                    <p class="mb-0 small text-muted">跟随师父学习后，《葬经》豁然贯通，对气场行止理解极深。师父资料去繁存要，功底扎实，应验率极高。</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow-sm mb-3">
+                    <h6 class="fw-bold">奇门遁甲学员</h6>
+                    <p class="mb-0 small text-muted">师父的直断规律清晰、可视化、极易落地。轮讲模式高效灵活，学习体验极佳。</p>
+                </div>
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h6 class="fw-bold">学员评价</h6>
+                    <p class="mb-0 small text-muted">网上体系杂乱，唯有师父这套应验率最高，越学越踏实、越用越精准。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 执业初心 -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">执业初心</h2>
+        <p style="max-width:700px;margin:0 auto;line-height:2;">
+            不赚虚妄之财，不做欺心之断。<br>
+            以易心守本心，以专业换信任。<br>
+            为迷茫者拨开迷雾，为前行者指明方向。<br>
+            愿每一位缘主：知命、顺时、笃行、致远。
+        </p>
+    </div>
+</section>
+
+<!-- 联系咨询 -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="bg-danger text-white p-5 rounded-3 text-center" style="cursor:pointer;" onclick="openEwmModal()">
+            <h3 class="mb-3">点击联系咨询</h3>
+            <h5 class="mb-1">微信：ZXYSY1201220</h5>
+            <p class="mb-0 small">添加请注明：命理咨询</p>
+        </div>
+    </div>
+</section>
+
+<!-- 二维码弹窗 (默认关闭，进入页面不显示) -->
+<div id="ewmModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; cursor:zoom-out;" onclick="closeEwmModal()">
+    <img src="img/wx.jpg" style="max-width:80%; max-height:80%; border-radius:8px;">
+</div>
+
+<script>
+function openEwmModal(){
+    document.getElementById('ewmModal').style.display = 'flex';
+}
+function closeEwmModal(){
+    document.getElementById('ewmModal').style.display = 'none';
+}
+</script>
+</section>
+
+<!-- 底部 -->
+<footer class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <p class="mb-0">© 2026 花师傅 · 国学命理传承 保留所有权利</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
